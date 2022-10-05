@@ -60,7 +60,7 @@ Deployments are not instant. To check in on the status/progress of your deployme
 
 ## Development
 
-If you want your site to have multiple pages, you may run into some trouble with routing. It is recommend to use the `HashRouter` from `react-router-dom` to achieve a multi-page site. The code below can get you started.
+If you want your site to have multiple pages, you may run into some trouble with routing. It is recommend to use the `HashRouter` from `react-router-dom` to achieve a multi-page site. Replace `./src/app.tsx` with the code below to get started.
 
 ```typescript
 import React from 'react';
