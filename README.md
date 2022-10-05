@@ -22,37 +22,31 @@ Adds chaining, logic, and functions to your CSS which mean less and cleaner styl
 
 ## Getting Started
 
-1. Create a new repository and apply this template. 
+1. Click the `Use this template`, then clone your repo.
 
-    1. Make sure your new repository is public
+1. `npm install`
 
-2. `npm install`
+    1. You should install parcel and rimraf globally. `npm install parcel rimraf -g`
 
-    1. You should install Parcel globally. `npm instal parcel -g`
+1. `npm run start`
 
-3. `npm run start`
+    1. The above will spin up a local web server with code from `./src`.
 
-    1. The above will spin up a local web server with code from `./src`. Hot module replacement / live reloading is enabled by default.
+1. Go back to GitHub and head over to the Actions page.
 
-4. Commit your changes then go to the repository on GitHub.
+1. You should see a completed run or one in progress from the initial commit.
 
-5. Go to the Actions page.
+1. After the workflow completes go to the Settings page.
 
-6. Under the workflow sidebar, there should be a `Deploy Site` link, go there.
+1. Under the sidebar there is a `Pages` section, go there.
 
-7. You should see a run being queued or in progress.
+1. In Build and deployment section, click the `None` button under the Branch title. Select the `gh-pages` branch then `Save`.
 
-8. After the workflow completes go to the Settings page.
+    1. Deployments are not instant, it may take a few minutes (or 10!) for your first deployment to complete. To check in on the status/progress of your deployment, go to the Code page of your repository. In the sidebar there is an Environments section, you should see `github-pages`. If not, just wait for a bit for it to appear. Clicking the `github-pages` link will bring you to the deployment history of your site.
 
-9. Under the sidebar there is a `Pages` section, go there.
+1. Once the deployment is complete you'll see a `View deployment` button/link, click it.
 
-10. In Build and deployment section, click the `None` button under the Branch title. Select the `gh-pages` branch then `Save`.
-
-    1. Deployments are not instant, it may take a few minutes (or 10!) for your first deployment to complete. To check in on the status/progress of your deployment, go to the Code page of your repository. In the sidebar there is an Environments section, you should see `github-pages`. Clicking that link will bring you to the deployment history of your site. An in progress deployment will appear with a yellow rocket ship icon.
-
-11. Once the deployment is complete you'll see some messaging and a new section appear on the page tell you that your site is live. Click the `Visit site` button.
-
-12. Your site should have the same content as your local web server.
+1. Your site should have the same content as your local web server.
 
 ## Next Steps
 
