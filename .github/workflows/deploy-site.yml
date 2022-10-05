@@ -1,7 +1,5 @@
-name: deploy-site
-on:
-  workflow_dispatch:
-  push:
+name: Deploy Site
+on: workflow_dispatch
 
 jobs:
   deploy-site:
