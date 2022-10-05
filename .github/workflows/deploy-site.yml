@@ -1,7 +1,6 @@
 name: deploy-site
 on:
   workflow_dispatch:
-  push:
 
 jobs:
   deploy-site:
