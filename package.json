@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/christopher-aube/github-portfolio#readme",
   "scripts": {
-    "prestart": "rimraf ./dev",
+    "prestart": "rimraf ./dist",
     "start": "parcel serve --target dev --open",
     "prebuild": "rimraf ./build",
     "build": "parcel build --target prod --no-cache"
