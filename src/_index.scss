@@ -1,0 +1,17 @@
+@forward './styles';
+
+@use './styles' as *;
+
+#app {
+  background-color: var(--bg);
+  color: var(--color);
+  font-family: var(--font);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

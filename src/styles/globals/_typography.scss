@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');
+
+$ref-font-family: 'Lato', sans-serif;
+$ref-font-weight-light: 100;
+$ref-font-weight: 400;
+$ref-font-weight-bold: 700;
+$ref-font-size: 1rem;
+
+:root {
+  --typeface-family-sm: #{$ref-font-family};
+  --typeface-weight-sm: #{$ref-font-weight};
+  --typeface-size-sm: #{($ref-font-size * 0.75)};
+
+  --typeface-family-md: #{$ref-font-family};
+  --typeface-weight-md: #{$ref-font-weight};
+  --typeface-size-md: #{$ref-font-size};
+
+  --typeface-family-lg: #{$ref-font-family};
+  --typeface-weight-lg: #{$ref-font-weight};
+  --typeface-size-lg: #{($ref-font-size * 1.25)};
+
+  --typeface-family-h1: #{$ref-font-family};
+  --typeface-weight-h1: #{$ref-font-weight};
+  --typeface-size-h1: #{($ref-font-size * 2.25)};
+}
+
+.text-sm {
+  font-family: var(--typeface-family-sm);
+  font-weight: var(--typeface-weight-sm);
+  font-size: var(--typeface-size-sm);
+  font-variant: small-caps;
+  letter-spacing: 0.05rem;
+}
+
+.text-md {
+  font-family: var(--typeface-family-md);
+  font-weight: var(--typeface-weight-md);
+  font-size: var(--typeface-size-md);
+}
+
+.text-lg {
+  font-family: var(--typeface-family-lg);
+  font-weight: var(--typeface-weight-lg);
+  font-size: var(--typeface-size-lg);
+}
+
+h1.heading {
+  font-family: var(--typeface-family-h1);
+  font-weight: var(--typeface-weight-h1);
+  font-size: var(--typeface-size-h1);
+}

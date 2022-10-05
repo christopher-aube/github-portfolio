@@ -1,0 +1,59 @@
+{
+  "name": "github-portfolio",
+  "version": "0.0.1",
+  "description": "This repository is to be use as an example of how to setup a portfolio site using [GitHub Pages](https://pages.github.com/).",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christopher-aube/github-portfolio.git"
+  },
+  "keywords": [
+    "github",
+    "parcel",
+    "react",
+    "typescript",
+    "scss",
+    "portfolio",
+    "template"
+  ],
+  "author": "chris aube",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/christopher-aube/github-portfolio/issues"
+  },
+  "homepage": "https://github.com/christopher-aube/github-portfolio#readme",
+  "scripts": {
+    "prestart": "rimraf ./dev",
+    "start": "parcel serve --target dev --open",
+    "prebuild": "rimraf ./build",
+    "build": "parcel build --target prod --no-cache"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "parcel": "^2.7.0",
+    "postcss": "^8.4.17",
+    "postcss-modules": "^5.0.0",
+    "process": "^0.11.10",
+    "rimraf": "^3.0.2",
+    "sass": "^1.55.0",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.1"
+  },
+  "dev": "./dev/index.html",
+  "prod": "./build/index.html",
+  "targets": {
+    "dev": {
+      "source": "./src/index.html"
+    },
+    "prod": {
+      "source": "./src/index.html",
+      "distDir": "./build",
+      "publicUrl": "./"
+    }
+  }
+}
