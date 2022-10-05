@@ -53,7 +53,7 @@
     "prod": {
       "source": "./src/index.html",
       "distDir": "./build",
-      "publicUrl": "/"
+      "publicUrl": "./"
     }
   }
 }
