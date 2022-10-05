@@ -38,7 +38,7 @@ Adds chaining, logic, and functions to your CSS which mean less and cleaner styl
 
 5. Go to the Actions page.
 
-6. Under the workflow sidebar, there should be a `deploy-site` link, go there.
+6. Under the workflow sidebar, there should be a `Deploy Site` link, go there.
 
 7. Click the `Run workflow` button.
 
