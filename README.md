@@ -64,35 +64,41 @@ If you want your site to have multiple pages, you may run into some trouble with
 
 ```typescript
 import React from 'react';
-import { createRoot } from 'react-dom/client';
-import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-
-const container = document.getElementById('app') as HTMLElement;
-const root = createRoot(container);
+import { HashRouter as Router, Routes, Route, Navigate, Link } from 'react-router-dom';
 
 const PageOnePath = '/';
 const PageOne = () => {
-  return <div>Page One</div>;
+  return <h1 className="heading">Page One</h1>;
 }
 
-const PageOnePath = '/page-two';
+const PageTwoPath = '/page-two';
 const PageTwo = () => {
-  return <div>Page Two</div>;
+  return <h1 className="heading">Page Two</h1>;
 }
 
-const App = () => {
+export const App = () => {
   return (
     <Router>
       <main>
+        <nav>
+          <ul>
+            <li>
+              <Link to={PageOnePath}>Page One</Link>
+              <Link to={PageTwoPath}>Page Two</Link>
+            </li>
+          </ul>
+        </nav>
         <Routes>
           <Route path={PageOnePath} element={<PageOne />} />
           <Route path={PageTwoPath} element={<PageTwo />} />
-          <Route path="*" element={<Navigate to={PageOnePath} />
+          <Route path="*" element={<Navigate to={PageOnePath} />} />
         </Routes>
       </main>
     </Router>
   )
 };
 
-root.render(<App />);
+export default {
+  App,
+};
 ```
