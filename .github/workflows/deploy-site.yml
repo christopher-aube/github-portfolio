@@ -1,5 +1,8 @@
 name: Deploy Site
-on: workflow_dispatch
+on:
+  push:
+    branches:
+      - "main"
 
 jobs:
   deploy-site:
