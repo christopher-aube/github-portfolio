@@ -26,12 +26,12 @@ jobs:
         run: npm install
 
       - name: Build
-        run: npm run build:site
+        run: npm run build
 
       - name: Publish
         uses: crazy-max/ghaction-github-pages@v2
         with:
           target_branch: gh-pages
-          build_dir: site/
+          build_dir: build/
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
