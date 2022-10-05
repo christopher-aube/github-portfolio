@@ -40,7 +40,7 @@ Adds chaining, logic, and functions to your CSS which mean less and cleaner styl
 
 6. Under the workflow sidebar, there should be a `Deploy Site` link, go there.
 
-7. Click the `Run workflow` button.
+7. You should see a run being queued or in progress.
 
 8. After the workflow completes go to the Settings page.
 
@@ -50,13 +50,13 @@ Adds chaining, logic, and functions to your CSS which mean less and cleaner styl
 
     1. Deployments are not instant, it may take a few minutes (or 10!) for your first deployment to complete. To check in on the status/progress of your deployment, go to the Code page of your repository. In the sidebar there is an Environments section, you should see `github-pages`. Clicking that link will bring you to the deployment history of your site. An in progress deployment will appear with a yellow rocket ship icon.
 
-11. It may take a few minutes but you'll see some messaging and a new section appear on the page tell you that your site is live. Click the `Visit site` button.
+11. Once the deployment is complete you'll see some messaging and a new section appear on the page tell you that your site is live. Click the `Visit site` button.
 
 12. Your site should have the same content as your local web server.
 
 ## Next Steps
 
-After committing changes follow steps 5 - 7 to update your site.
+Pushing changes to main will trigger deployments, so it best practice to create branches and merge pull requests. Doing so will avoid unnecessary workflow runs.
 
 If you want your site to have multiple pages, you may run into some trouble with routing. It is recommend to use the `HashRouter` from `react-router-dom` to achieve a multi-page site. Replace `./src/app.tsx` with the code below to get started.
 
