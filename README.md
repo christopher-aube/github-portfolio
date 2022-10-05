@@ -46,7 +46,9 @@ Adds chaining, logic, and functions to your CSS which mean less and cleaner styl
 
 9. Under the sidebar there is a `Pages` section, go there.
 
-10. In Build and deployment section, click the `None` button under the Branch title. Select the `gh-pages` branch.
+10. In Build and deployment section, click the `None` button under the Branch title. Select the `gh-pages` branch then `Save`.
+
+    1. Deployments are not instant, it may take a few minutes (or 10!) for your first deployment to complete. To check in on the status/progress of your deployment, go to the Code page of your repository. In the sidebar there is an Environments section, you should see `github-pages`. Clicking that link will bring you to the deployment history of your site. An in progress deployment will appear with a yellow rocket ship icon.
 
 11. It may take a few minutes but you'll see some messaging and a new section appear on the page tell you that your site is live. Click the `Visit site` button.
 
@@ -54,11 +56,7 @@ Adds chaining, logic, and functions to your CSS which mean less and cleaner styl
 
 ## Next Steps
 
-If you push your commits directly into `main`, you'll have to manual trigger the workflow to get the site to update (steps 5 - 7). A better way, is to create branches and merge pull requests into `main`. Doing so will result in an automatic deployment.
-
-Deployments are not instant. To check in on the status/progress of your deployment, go to the Code page of your repository. In the sidebar there is an Environments section, you should see `github-pages`. Clicking that link will bring you to the deployment history of your site. An in progress deployment will appear with a yellow rocket ship icon.
-
-## Development
+After committing changes follow steps 5 - 7 to update your site.
 
 If you want your site to have multiple pages, you may run into some trouble with routing. It is recommend to use the `HashRouter` from `react-router-dom` to achieve a multi-page site. Replace `./src/app.tsx` with the code below to get started.
 
